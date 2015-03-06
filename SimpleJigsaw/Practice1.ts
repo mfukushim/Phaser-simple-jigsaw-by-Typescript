@@ -50,14 +50,14 @@
 
             //  ダミーユニット設定
             for (var i = 0; i < partslist.length; i++) {
-                var zig = partslist[i];
+                var jigSprite = partslist[i];
 
-                zig.position.set(zig.position.x - imgwidth / 2 + this.game.rnd.realInRange(-5, 5),
-                    zig.position.y - imgheight / 2 + this.game.rnd.realInRange(-5, 5));
+                jigSprite.position.set(jigSprite.position.x - imgwidth / 2 + this.game.rnd.realInRange(-5, 5),
+                    jigSprite.position.y - imgheight / 2 + this.game.rnd.realInRange(-5, 5));
 
-                this.group.add(zig);
+                this.group.add(jigSprite);
 
-                zig.input.enableDrag(false, true, true, 128);
+                jigSprite.input.enableDrag(false, true, true, 128);
             }
         }
 
